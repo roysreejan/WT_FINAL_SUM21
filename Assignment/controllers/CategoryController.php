@@ -25,7 +25,7 @@
         }
         $err_db = $rs;
     }}
-    else if (isset($_POST["editcategory"])){
+    else if (isset($_POST["edit_category"])){
         //validations
         if(empty($_POST["name"])){
             $hasError = true;
@@ -65,7 +65,7 @@
     }
     function updateCategory($name,$id){
         $query = "update categories set name= '$name' where id = $id ";
-
+		echo $query;
         return execute($query);
     }
 ?>
