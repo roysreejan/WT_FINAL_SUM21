@@ -68,4 +68,14 @@
 		echo $query;
         return execute($query);
     }
+	function checkname($name)
+	{
+		$query = "select name from categories where name='$name'";
+		$rs = get($query);
+		if(count($rs)>0)
+		{
+			return true;
+		}
+		return false;
+	}
 ?>

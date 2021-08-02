@@ -9,7 +9,7 @@
 		<form  action="" method="post" class="form-horizontal form-material">
 			<div class="form-group">
 				<h4 class="text">Name:</h4> 
-				<input type="text" name ="name" class="form-control">
+				<input type="text" name ="name" onfocusout="checkname(this)" class="form-control">
 			</div>
 			
 			<div class="form-group text-center">
@@ -18,6 +18,6 @@
 			</div>
 		</form>
 	</div>
-
+<script src="js/category.js"></script>
 <!--addproduct ends -->
 <?php include 'main_footer.php';?>
